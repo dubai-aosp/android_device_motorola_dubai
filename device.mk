@@ -51,11 +51,6 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,surfaceflinger,udfps_lib,//$(LOCAL_PATH):libudfps_extension.dubai)
 
-# GMS
-ifeq ($(WITH_GMS),true)
-GMS_MAKEFILE=gms_minimal.mk
-endif
-
 # Init
 PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
